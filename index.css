@@ -28,6 +28,7 @@ nav {
         width: calc(100vw - 40px) !important;
     }
 }
+
 #projectWrap {
     margin: 20px;
     display: inline-block;
@@ -38,14 +39,17 @@ nav {
         width: calc(100vw - 40px) !important;
     }
 }
+
 #projectFlex {
     display: flex;
     flex-wrap: wrap;
 }
+
 #futureFlex {
     display: flex;
     flex-wrap: wrap;
 }
+
 .project-card {
     margin: 5px;
     width: 15rem;
