@@ -1,7 +1,29 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+nav {
+    z-index: 2000;
+}
+
 #snapcard {
     margin: 20px;
     display: inline-block;
     vertical-align: top;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
     @media (max-width: 600px) {
         width: calc(100vw - 40px) !important;
     }
@@ -11,6 +33,7 @@
     display: inline-block;
     vertical-align: top;
     width: calc(100vw - 85px - 20rem);
+    animation: 1s ease-out 0s 1 slideInFromTop;
     @media (max-width: 600px) {
         width: calc(100vw - 40px) !important;
     }
@@ -26,4 +49,8 @@
 .project-card {
     margin: 5px;
     width: 15rem;
+}
+
+.card {
+    background-color: #f0f0f0;
 }
